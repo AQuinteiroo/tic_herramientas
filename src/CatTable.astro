@@ -2,7 +2,7 @@
 import Airtable from 'airtable';
 
 let apiKey = import.meta.env.AIRTABLE_API_KEY;  
-let airtable = new Airtable({apiKey}).base('appfwVamfnGoGJPNg');  // replace diego id with our own id
+let airtable = new Airtable(apiKey).base('appfwVamfnGoGJPNg');  // replace diego id with our own id
 let cats = await airtable.table('Categorias').select(
     {
         view: "Grid view"
@@ -24,7 +24,7 @@ items.map((item) =>
        <div class="cat-card">
            {item.images?<img class="cat-image" src={item.images[0].url} alt="{item.images[0].filename}"/>:<div>'No hay imagen'</div>}
             
-                <h3><a href={"/herramienta/"+item.id}>{item.categoria}</a></h3>
+                <h3><a href={"/herramientas?cat="+item.id}>{item.categoria}</a></h3>
                 <p>{item.description}</p>
         </div><br/>
     )
