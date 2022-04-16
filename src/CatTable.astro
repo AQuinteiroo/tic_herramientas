@@ -22,11 +22,11 @@ const items = cats.map((record) => ({
 items.map((item) => 
     (
        <div class="cat-card">
-           {item.images?<img class="cat-image" src={item.images[0].url} alt="{item.images[0].filename}"/>:<div>'No hay imagen'</div>}
-            
-                <h3><a href={"/herramienta/"+item.id}>{item.categoria}</a></h3>
-                <p>{item.description}</p>
-        </div><br/>
+            <div class="cat-title">
+                <h2><a href={"/herramienta/"+item.id}>{item.categoria}</a></h2>
+            </div>
+           {item.images?<img class="cat-image" src={item.images[0].url} alt="{item.images[0].filename}"/>:<div class="cat-image">'No hay imagen'</div>}
+        </div>
     )
 )
 }

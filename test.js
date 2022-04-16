@@ -1,6 +1,6 @@
 var Airtable = require('airtable');
 
-var apiKey = 'keyvbhw0DKtrJbEkS';  // Airtable API Key
+var apiKey = 'keyqCeVQILqtu5iMI';  // Airtable API Key
 var baseID = 'appfwVamfnGoGJPNg';  // Airtable Base ID
 
 var base = new Airtable({apiKey: apiKey}).base(baseID);

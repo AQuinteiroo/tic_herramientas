@@ -356,6 +356,7 @@ img.logofront {
 
 .cat-image {
   width: 200px;
+  height: 200px;
   background-color: rgb(221, 213, 213);
   overflow: hidden;
   float: left;
