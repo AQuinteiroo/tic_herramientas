@@ -24,7 +24,7 @@ items.map((item) =>
     (
        <div class="cat-card">
             <div class="cat-title">
-                <h2><a href={"/herramienta/"+item.id}>{item.categoria}</a></h2>
+                <h3><a href={"/herramientas?cat="+item.categoria}>{item.categoria}</a></h3>
             </div>
            {item.images?<img class="cat-image" src={item.images[0].url} alt="{item.images[0].filename}"/>:<div class="cat-image">'No hay imagen'</div>}
         </div>
