@@ -1,7 +1,8 @@
 ---
 import Airtable from 'airtable';
 
-let apiKey = import.meta.env.AIRTABLE_API_KEY;  
+let apiKey = import.meta.env.AIRTABLE_API_KEY;
+console.log(apiKey);  
 let airtable = new Airtable({apiKey}).base('appfwVamfnGoGJPNg');  // replace diego id with our own id
 let cats = await airtable.table('Categorias').select(
     {

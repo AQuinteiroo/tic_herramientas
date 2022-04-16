@@ -348,6 +348,7 @@ img.logofront {
 }
 
 .cat-card  {
+  max-width: 200px;
   display: inline-block;
   color: var(--fg-dark);
   margin: 10px;
@@ -357,6 +358,21 @@ img.logofront {
 .cat-image {
   width: 200px;
   height: 200px;
+  background-color: rgb(221, 213, 213);
+  overflow: hidden;
+  float: left;
+  margin: 5px;
+  border: #b4290d solid 1px;
+}
+.tool  {
+  display: inline-block;
+  color: var(--fg-dark);
+  margin: 10px;
+}
+
+.tool-image {
+  width: 150px;
+  height: 150px;
   background-color: rgb(221, 213, 213);
   overflow: hidden;
   float: left;
