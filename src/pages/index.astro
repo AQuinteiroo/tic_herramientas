@@ -1,6 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import gears from '../../assets/gears.jpg'
 ---
 <BaseLayout title="Página Principal">
-  <h1>Hello World Alvaro</h1>
+<div class="principal-page">
+  <h1>Catálogo de herramientas Escuela IDEO</h1>
+  <p>
+    Aquí podrás encontrar una lista de herramientas que pueden ser de utilidad para la creación de contenidos y proyectos de la Escuela IDEO.
+  </p>
+  <image src={gears} alt="gears" />
+</div>
 </BaseLayout>
