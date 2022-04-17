@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import logo_group from '../assets/logo-group.svg'
+import logo_ideo from '../assets/logo-ideo.png'
+import abatar from '../assets/abatar.jpg'
+---
+<BaseLayout title="Acerca de...">
+  <h1>Acerca de....</h1>
+  <table class="tabla_about">
+  <tr><td class="cell"><p><img class="about_img" src={abatar}></p>
+  
+  <p><img class="about_img" src={logo_ideo}></p>
+  
+  <p><img class="about_img" src={logo_group}></p></td>
+  <td  class="cell"><p><b>Autor: </b>Álvaro Quinteiro Solano</p>
+  <p><b>Profesores: </b>Diego Gómez Díaz y Francisco Casquero González</p>
+  <p><b>Asignatura: </b>TIC</p>
+  <p><b>Proyecto:</b>Página de cataloación de herramientas de taller.</p>
+  <hr>
+  <h4>Herraminetas usadas:</h4>
+  <p>Airtable</p>
+  <p>Nodejs</p>
+  <p>Microsoft Visual Code</p>
+  <p>Astro</p>
+  <p>deapdreamgenerator</p>
+  </td></tr></table>
+</BaseLayout>

@@ -33,16 +33,19 @@ const items = herramientas.map((record) => ({
     categoria: record.get('Categoria'),
     description: record.get('Descripcion'),
     images: record.get('Imagen'),
+    sala: record.get('NombreSala'),
+    posicion: record.get('posicion'),
 }));
 let tools_array = items.map((i) => {
     let parcial_html=""
     parcial_html += '<div class="tool">';
-    parcial_html += '<div class="tool-image">';
-    parcial_html += '<img src="'  + i.images[0].url + '" alt="' + i.description + '">';
-    parcial_html += '</div>';
+    //parcial_html += '<div class="tool-image">';
+    parcial_html += '<img class="tool-image" src="'  + i.images[0].url + '" alt="' + i.description + '">';
+    //parcial_html += '</div>';
     parcial_html += '<div class="tool-info">';
     parcial_html += '<h3>' + i.name + '</h3>';
     parcial_html += '<p>' + i.description + '</p>';
+    parcial_html += '<p><b>Ubicación:</b> ' + i.sala + ' - '+ i.posicion + '</p>';
     parcial_html += '</div>';
     parcial_html += '</div>\n';
     return parcial_html

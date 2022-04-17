@@ -364,18 +364,46 @@ img.logofront {
   margin: 5px;
   border: #b4290d solid 1px;
 }
+
+.toolsDiv {
+  background-color: #d0eaf3;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2em;
+  min-height: 75vh; 
+}
 .tool  {
   display: inline-block;
   color: var(--fg-dark);
   margin: 10px;
 }
 
+
 .tool-image {
-  width: 150px;
-  height: 150px;
-  background-color: rgb(221, 213, 213);
+  max-width: 200px;
+  
+  background-color: rgb(213, 213, 213);
   overflow: hidden;
   float: left;
   margin: 5px;
   border: #b4290d solid 1px;
+}
+
+.about_img {
+  max-width: 200px;
+}
+
+.tabla_about {
+  color:#212121;
+  
+  text-align: top;
+   
+}
+
+.tabla_about td {
+  vertical-align: top;
+  padding: 10px;
+  border: 1px solid #b4290d;
+  border-radius: 5px;
+  background-color: #d0eaf3;
 }
