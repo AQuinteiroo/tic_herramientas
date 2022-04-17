@@ -37,7 +37,7 @@ const items = herramientas.map((record) => ({
     posicion: record.get('posicion'),
 }));
 let tools_array = items.map((i) => {
-    let parcial_html=""
+    let parcial_html="";
     parcial_html += '<div class="tool">';
     //parcial_html += '<div class="tool-image">';
     parcial_html += '<img class="tool-image" src="'  + i.images[0].url + '" alt="' + i.description + '">';
@@ -52,7 +52,7 @@ let tools_array = items.map((i) => {
 });
 
     if(tools_array.length > 0){
-        let final_html = tools_array.join("\n");
+        let final_html = "<h2>Categoría: " + categoria + "<\h2> " + tools_array.join("\n");
         document.getElementById("toolsGrid").innerHTML = final_html;
     }
     else{
